@@ -1,0 +1,113 @@
+.kanbanBoard {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.kanbanColumn {
+  width: 100%;
+  flex: 1;
+  padding: 0px 10px;
+}
+
+body {
+  background-color: #f4f4fc;
+}
+
+.headerForBody {
+  background-color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.displayContainer {
+  margin: 10px;
+  border: 3px solid #ececec;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.displayIconContainer {
+  height: 20px;
+  width: 20px;
+  border-right: 3px solid #ececec;
+  padding: 5px;
+}
+
+.displayTextContainer {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  color: #525458;
+  font-weight: 600;
+}
+
+.downArrowContainer {
+  width: 20px;
+  height: 20px;
+}
+
+.displayDropDownContainer {
+  display: relative;
+}
+
+.displayFilterDropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border: 2px solid #ececec;
+  background-color: #f9f9fb;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.dropdownElementContainer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #8f9091;
+  font-weight: 500;
+}
+
+.dropdownElementContainer>select {
+  color: black;
+  justify-content: space-between;
+  border: 2px solid #8f9091;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+.dropdownElementContainer>select:focus {
+  color: black;
+  justify-content: space-between;
+  outline: none;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+.columnHeadingContainer {
+  display: flex;
+  gap: 5;
+  padding: 0px 5px;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 5px;
+}
+
+.columnHeadingText {
+  font-weight: 600;
+  color: #43444a;
+  font-size: 18px;
+}
+
+.columnHeadingCount {
+  color: #9b9ea4;
+  font-size: 15px;
+}
